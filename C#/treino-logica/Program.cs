@@ -36,13 +36,15 @@ public class Square
 
     static void Main(String[] args)
     {
-        var square = GenerateSquares(20);
+        Console.Write("Digite a quantidade de numeros perfeitos que precisa: ");
+        string input = Console.ReadLine();
+
+        int resultado = Int32.Parse(input);
+
+        var square = GenerateSquares(resultado);
         FiboFn fibo = new FiboFn(10);
 
-        foreach (int number in fibo.Sequence)
-        {
-            Console.WriteLine(number);
-        }
+
 
         foreach (int b in square)
         {

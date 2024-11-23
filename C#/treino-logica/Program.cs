@@ -37,7 +37,12 @@ public class Square
     static void Main(String[] args)
     {
         var square = GenerateSquares(20);
+        FiboFn fibo = new FiboFn(10);
 
+        foreach (int number in fibo.Sequence)
+        {
+            Console.WriteLine(number);
+        }
 
         foreach (int b in square)
         {
